@@ -5,7 +5,7 @@ import java.util.List;
 public class FunctionPackage {
     public static void main(String[] args){
 
-        int[] listes = {91, 82, 34, 46, 53,10};
+        int[] listes = {91, 82, 34, 46, 53, 10};
         System.out.println("排序前的id：" + listes);
         Arrays.sort(listes);
 
@@ -14,7 +14,6 @@ public class FunctionPackage {
             System.out.println(listes[i]);
 
         }
-        System.out.println("排序后的id：" + listes);
         List <Integer> liste = new ArrayList<Integer>();
         liste.add(56);
         liste.add(89);
