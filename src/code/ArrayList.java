@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
 
 public class ArrayList {
-    public static void main(String args[]){
+    public static void main(String[] args){
         int[] myArrayList = {10, 9, 15, 8, 24, 36, 42, 56, 1, 99};
         System.out.println("选择排序：");
         arraySort(myArrayList);
@@ -22,8 +22,8 @@ public class ArrayList {
     /*
     * 遍历数组*/
     public static void traverse(int[] myArray){
-        for(int i = 0; i < myArray.length; i++){
-            System.out.print(myArray[i] + " ");
+        for (int j : myArray) {
+            System.out.print(j + " ");
         }
     }
     /*
@@ -73,9 +73,9 @@ public class ArrayList {
     }
     public static void doubleArray(){
         int[][] arrays = {{1,2,3,4,5},{5,4,3,2,1},{6,7,8,9,10},{10, 9, 8, 7, 6, 5}};
-        for (int x = 0; x < arrays.length; x++){
-            for (int y = 0; y < arrays[1].length; y++){
-                System.out.print(arrays[x][y] + " ");
+        for (int[] array : arrays) {
+            for (int y = 0; y < arrays[1].length; y++) {
+                System.out.print(array[y] + " ");
             }
         }
     }
