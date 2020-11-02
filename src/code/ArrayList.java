@@ -21,7 +21,7 @@ public class ArrayList {
     }
     /*
     * 遍历数组*/
-    public static void traverse(int[] myArray){
+    public static void traverse(int @NotNull  [] myArray){
         for (int j : myArray) {
             System.out.print(j + " ");
         }
