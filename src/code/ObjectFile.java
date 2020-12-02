@@ -26,9 +26,14 @@ public class ObjectFile {
         System.out.println(classes.getArray(arrayList).length);
     }
 }
+
 class NewObject{
     /*
-    *
+    *构造函数和一般函数的区别：
+    * 构造函数：对象创建时就会调用与之对应的构造函数，对对象进行初始化；
+    * 一般函数：只有对象创建后，需要调用时，才会被调用；
+    * 构造函数：对象创建时只会调用一次
+    * 一般函数：对象创建后，可以被多次调用
     * */
     public int[] getArray(int[] arrayList){
         for (int i : arrayList) {
@@ -37,4 +42,5 @@ class NewObject{
         Arrays.sort(arrayList);
         return arrayList;
     }
+
 }
